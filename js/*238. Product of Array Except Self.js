@@ -9,6 +9,12 @@ Follow up:
 Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose of space complexity analysis.)
  */
 
+ /**
+  * 思路： 
+  *     result[i]用来保存不包括nums[i]的左边乘积
+  *     最终结果是左边乘右边
+  *     右边用一个值来表示，O(1)
+  */
 
  /**
  * @param {number[]} nums
