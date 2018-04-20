@@ -1,3 +1,5 @@
+// 维护一个窗体，只要窗口大小等于窗口中最多的字母个数+k，就是应有的MAX_LENGTH
+
 class Solution {
 public:
     int characterReplacement(string s, int k) {

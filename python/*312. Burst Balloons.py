@@ -22,7 +22,16 @@ Return 167
 """
 采用动态规划的方法，
 由于爆破一个气球会影响下一次的分值计算，所以我们采用Bottom up的形式，
-首先
+首先找到最后一个爆破的气球，计算可能的分值。
+因为只有三个气球的时候才能计算分数，所以k从2开始计算。
+left, right = 0, 2的时候，dp[0][2] = nums[0]*nums[1]*nums[2], 针对每个间隔可能爆破的气球都计算一次，0/2中间只有1.
+left, right = 0, 4的时候， dp[0][4] 需要找到0到4之间最大的点(i)。
+nums[left] * nums[i] * nums[right] + dp[left][i] + dp[i][right]代表：
+前一项是爆破本次气球应得分数
+中间是爆破本次气球前左侧得分
+后一项是爆破本次气球前，右侧得分。
+
+dp[i][j]代表爆破i到j得分最高值。
 """
 class Solution(object):
     def maxCoins(self, nums):
