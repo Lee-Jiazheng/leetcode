@@ -5,4 +5,4 @@ class Solution:
         :type S: str
         :rtype: int
         """
-        return len([s for s in S if s in {_j: True for _j in J}])
+        return len([s for s in S if s in {_j: True for _j in J}])   
