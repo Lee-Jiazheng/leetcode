@@ -19,9 +19,7 @@ class Solution(object):
         
         res = []
         for i in range(depth):
-            print(i)
             void = [""]*(pow(2,depth-1-i)-1)
-            print(void)
             temp = []
             for c, num in enumerate(self.lst[i]):
                 temp += void + [num] + void + ([""] if c != len(self.lst[i])-1 else [])
