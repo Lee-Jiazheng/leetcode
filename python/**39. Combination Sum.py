@@ -1,4 +1,3 @@
-
 # 硬解
 class Solution:
     def combinationSum(self, candidates, target):
@@ -25,7 +24,7 @@ class Solution:
 
 
 
-## 剪枝
+## 剪枝!!!
 ## start的作用：
 ## 当以第2个数开头的时候，不会出现第一个数
 class Solution:
