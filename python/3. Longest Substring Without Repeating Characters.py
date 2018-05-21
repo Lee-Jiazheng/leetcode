@@ -9,6 +9,11 @@ Given "bbbbb", the answer is "b", with the length of 1.
 
 Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 """
+
+# 另一种方法
+# 记录每个字符最后一次出现的位置
+# 记录当前计算字符串的开始位置
+# 判断当前字符最后一次出现位置是否大于开始位置
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         """
