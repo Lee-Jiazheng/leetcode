@@ -51,4 +51,6 @@ class Solution:
             last = s
         return res
 
+        # \1 是第一个分组括号
+        # {2,}代表字符串在长度2以上
         return [[r.start(), r.end() - 1] for r in re.finditer(r'(\w)\1{2,}', S)]
