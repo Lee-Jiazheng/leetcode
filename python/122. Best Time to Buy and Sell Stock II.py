@@ -29,7 +29,6 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 """
 
-
 # 无需前后比较，直接比较补差值，局部最优就是全局最优。
 class Solution:
     def maxProfit(self, prices):
