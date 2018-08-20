@@ -22,6 +22,8 @@ Explanation: There are three ways to climb to the top.
 3. 2 steps + 1 step
 """
 
+# 动态规划，dp[i] = dp[i-1] + dp[i-2]，可以i-2走两step，也可以i-1走1step.
+
 class Solution:
     def climbStairs(self, n):
         """
