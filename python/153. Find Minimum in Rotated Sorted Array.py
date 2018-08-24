@@ -25,10 +25,14 @@ class Solution:
         :rtype: int
         """
         l, h = 0, len(nums)-1
-        while l < h:
+        # 使用数字进行判断，更快结束
+        while nums[l] > nums[h]:
             mid = (l+h) // 2
-            if nums[mid] <= nums[h]:
+            if nums[mid] < nums[h]:
                 h = mid
-            else:
+            elif nums[mid] > nums[h]:
                 l = mid + 1
+            else:
+                # 提前终止
+                return nums[l]
         return nums[l]
