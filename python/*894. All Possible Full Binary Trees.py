@@ -29,6 +29,8 @@ Note:
 #         self.left = None
 #         self.right = None
 
+# 基本思想就是构建一棵左右数目不同的树，满二叉树形式上都是相同的
+# 
 class Solution:
     def allPossibleFBT(self, N):
         """
